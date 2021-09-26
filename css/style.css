@@ -1,0 +1,114 @@
+:root {
+    --light: #EEEEEE;
+    --blue: #00ADB5;
+    --gray: #393E46;
+    --dark: #222831;
+    --dark-transparent: rgba(34, 40, 49, 0.73);
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--dark);
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    font-size: 1em;
+    position: fixed;
+    background-color: var(--dark-transparent);
+}
+
+header nav {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+header nav ul {
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    color: var(--light);
+    padding: 10px 25px;
+}
+
+header nav ul li a.option-special {
+    color: #222831;
+    background: #00ADB5;
+    margin-left: 15px;
+    border-radius: 15px;
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+main .introduction-section {
+    padding-top: 15vh;
+    height: 85vh;
+    display: flex;
+}
+
+main .introduction-section .container {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light);
+}
+
+main .introduction-section .container .me {
+    width: 30rem;
+}
+
+main .introduction-section .container .me h1 {
+    font-weight: 700;
+    font-size: 5.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+main .introduction-section .container .me p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+main .introduction-section .container .me a {
+    display: inline-block;
+    color: #222831;
+    background: #00ADB5;
+    border-radius: 15px;
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+main .introduction-section img {
+    max-width: 600px;
+    max-height: 600px;
+}
