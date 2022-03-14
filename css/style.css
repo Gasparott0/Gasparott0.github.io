@@ -126,12 +126,3 @@ main .introduction-section img {
 .p-bold {
     font-weight: 700 !important;
 }
-
-.special-a {
-    color: #222831 !important;
-    display: inline-block !important;
-    background: #00ADB5 !important;
-    border-radius: 15px !important;
-    padding: 10px 25px !important;
-    border-radius: 30px !important;
-}
