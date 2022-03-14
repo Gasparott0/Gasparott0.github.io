@@ -8,7 +8,7 @@
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background: var(--dark);
     height: 100%;
     width: 100%;
@@ -16,7 +16,6 @@ body {
 
 a {
     text-decoration: none;
-    font-weight: 700;
 }
 
 h1,
@@ -29,15 +28,23 @@ h6 {
 }
 
 header {
-    height: 15vh;
+    height: 13vh;
     width: 100%;
-    display: flex;
-    font-size: 1em;
+    font-size: 1.2em;
     position: fixed;
     background-color: var(--dark-transparent);
 }
 
-header nav {
+header .info {
+    height: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .info nav {
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -45,20 +52,25 @@ header nav {
     justify-content: end;
 }
 
-header nav ul {
+header .info p {
+    color: var(--light);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+header .info nav ul {
     height: 100%;
     align-items: center;
     list-style: none;
     display: flex;
 }
 
-header nav ul li a {
+header .info nav ul li a {
     color: var(--light);
     padding: 10px 25px;
 }
 
-header nav ul li a.option-special {
-    color: #222831;
+header nav ul li a.special-option {
     background: #00ADB5;
     margin-left: 15px;
     border-radius: 15px;
@@ -75,15 +87,14 @@ main .introduction-section {
 main .introduction-section .container {
     margin-left: auto;
     margin-right: auto;
-    min-width: 1200px;
+    min-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--light);
 }
 
 main .introduction-section .container .me {
-    width: 30rem;
+    width: 40rem;
 }
 
 main .introduction-section .container .me h1 {
@@ -95,20 +106,32 @@ main .introduction-section .container .me h1 {
 
 main .introduction-section .container .me p {
     font-size: 1.2rem;
+    line-height: 1.2;
     color: #fff;
     margin-bottom: 30px;
 }
 
-main .introduction-section .container .me a {
-    display: inline-block;
-    color: #222831;
-    background: #00ADB5;
-    border-radius: 15px;
-    padding: 20px 60px;
-    border-radius: 30px;
+main .introduction-section .container .me .social-medias {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    
 }
 
 main .introduction-section img {
     max-width: 600px;
     max-height: 600px;
+}
+
+.p-bold {
+    font-weight: 700 !important;
+}
+
+.special-a {
+    color: #222831 !important;
+    display: inline-block !important;
+    background: #00ADB5 !important;
+    border-radius: 15px !important;
+    padding: 10px 25px !important;
+    border-radius: 30px !important;
 }
