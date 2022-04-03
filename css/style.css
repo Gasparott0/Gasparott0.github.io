@@ -1,128 +1,62 @@
-:root {
-    --light: #EEEEEE;
-    --blue: #00ADB5;
-    --gray: #393E46;
-    --dark: #222831;
-    --dark-transparent: rgba(34, 40, 49, 0.73);
-}
-
-html,
-body {
-    font-family: 'Ubuntu', sans-serif;
-    background: var(--dark);
-    height: 100%;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Ubuntu', sans-serif;
-}
-
 header {
-    height: 13vh;
-    width: 100%;
-    font-size: 1.2em;
-    position: fixed;
-    background-color: var(--dark-transparent);
+  height: 13vh;
+  width: 100%;
+  position: fixed;
+  background-color: var(--dark-transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header .info {
-    height: 100%;
-    max-width: 1400px;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+header nav ul {
+  display: flex;
 }
 
-header .info nav {
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: end;
+header nav ul li a {
+  color: var(--light);
+  font-size: 1.2em;
+  padding: 10px 25px;
 }
 
-header .info p {
-    color: var(--light);
-    font-weight: 700;
-    font-size: 1.5rem;
-}
+/* header nav ul li a.special-option {
+  background: #00adb5;
+  margin-left: 15px;
+  border-radius: 15px;
+  padding: 20px 60px;
+  border-radius: 30px;
+} */
 
-header .info nav ul {
-    height: 100%;
-    align-items: center;
-    list-style: none;
-    display: flex;
-}
-
-header .info nav ul li a {
-    color: var(--light);
-    padding: 10px 25px;
-}
-
-header nav ul li a.special-option {
-    background: #00ADB5;
-    margin-left: 15px;
-    border-radius: 15px;
-    padding: 20px 60px;
-    border-radius: 30px;
+main {
+  width: 70%;
+  margin: auto;
 }
 
 main .introduction-section {
-    padding-top: 15vh;
-    height: 85vh;
-    display: flex;
+  color: var(--light);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main .introduction-section .container {
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 1400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+main .introduction-section .introduction-container {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-main .introduction-section .container .me {
-    width: 40rem;
+main .introduction-section .introduction-container .picture {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 5px solid var(--light);
 }
 
-main .introduction-section .container .me h1 {
-    font-weight: 700;
-    font-size: 5.2rem;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-main .introduction-section .container .me p {
-    font-size: 1.2rem;
-    line-height: 1.2;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-main .introduction-section .container .me .social-medias {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-    
-}
-
-main .introduction-section img {
-    max-width: 600px;
-    max-height: 600px;
-}
-
-.p-bold {
-    font-weight: 700 !important;
+main .introduction-section .introduction-container .social-medias {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
 }

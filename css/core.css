@@ -1,0 +1,49 @@
+:root {
+  --light: #eeeeee;
+  --blue: #00adb5;
+  --gray: #393e46;
+  --dark: #222831;
+  --dark-transparent: rgba(34, 40, 49, 0.95);
+}
+
+* {
+  text-align: center;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--light);
+  background: var(--dark);
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+}
