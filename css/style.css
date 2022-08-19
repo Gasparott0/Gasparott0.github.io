@@ -1,3 +1,5 @@
+/* HEADER STYLE */
+
 header {
   height: 13vh;
   width: 100%;
@@ -18,23 +20,16 @@ header nav ul li a {
   padding: 10px 25px;
 }
 
-/* header nav ul li a.special-option {
-  background: #00adb5;
-  margin-left: 15px;
-  border-radius: 15px;
-  padding: 20px 60px;
-  border-radius: 30px;
-} */
-
 main {
   width: 70%;
   margin: auto;
 }
 
+/* INTRODUCTION STYLE */
+
 main .introduction {
   color: var(--light);
   height: 100vh;
-  /* padding-top: 13vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,10 +49,24 @@ main .introduction .introduction-container .social-medias {
   justify-content: space-between;
 }
 
+/* ABOUT STYLE */
+
+main .about figure {
+  float: left;
+}
+
+main .about .text {
+  line-height: 35px;
+}
+
+main .about .text p {
+  text-align: justify;
+}
+
 main .about .picture {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  margin-bottom: 30px;
+  height: 350px;
+  width: 350px;
+  border-radius: 5px;
+  margin: 0px 40px 10px 0px;
   border: 5px solid var(--light);
 }
