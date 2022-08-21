@@ -24,14 +24,17 @@ a {
 }
 
 h1 {
+  white-space: nowrap;
   font-size: 3.5em;
 }
 
 h2 {
-  font-size: 1.5em;
+  white-space: nowrap;
+  font-size: 2em;
 }
 
 h3 {
+  white-space: nowrap;
   font-size: 1.17em;
 }
 
@@ -45,5 +48,5 @@ h6 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
