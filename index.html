@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="images/icons/introduction-icon.png"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon" href="images/icons/introduction-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/core.css" />
-  <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <title>Mateus Gasparotto</title>
-</head>
+    <title>Mateus Gasparotto</title>
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#introduction">Home</a></li>
-        <li><a href="#about-me">About-me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#social-media">Let's connect!</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Home</a></li>
+          <li><a href="#about-me">About-me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#social-media">Let's connect!</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="introduction" class="introduction">
-      <div class="introduction-container">
-        <img src="images/icons/introduction-icon.png" alt="" />
-        <h1>Junior Software Developer</h1>
-        <p class="p-bold">Hi guys 👋 I'm Mateus Gasparotto.</p>
-        <nav class="social-medias">
-          <a href="https://www.linkedin.com/in/mateus-gasparotto/" target="_blank">
-            <img src="images/icons/linkedin.png" alt="linkedin" />
-          </a>
-          <a href="https://twitter.com/GasparottoMS" target="_blank">
-            <img src="images/icons/twitter.png" alt="twitter" />
-          </a>
-          <a href="https://github.com/Gasparott0" target="_blank">
-            <img src="images/icons/github.png" alt="github" />
-          </a>
-        </nav>
-      </div>
-    </section>
-    <section id="about-me" class="about">
-      <h1>About-me</h1>
-      <!-- <figure>
+    <main>
+      <section id="introduction" class="introduction">
+        <div class="introduction-container">
+          <img src="images/icons/introduction-icon.png" alt="" />
+          <h1>Junior Software Developer</h1>
+          <p class="p-bold">Hi guys 👋 I'm Mateus Gasparotto.</p>
+          <nav class="social-medias">
+            <a
+              href="https://www.linkedin.com/in/mateus-gasparotto/"
+              target="_blank"
+            >
+              <img src="images/icons/linkedin.png" alt="linkedin" />
+            </a>
+            <a href="https://twitter.com/GasparottoMS" target="_blank">
+              <img src="images/icons/twitter.png" alt="twitter" />
+            </a>
+            <a href="https://github.com/Gasparott0" target="_blank">
+              <img src="images/icons/github.png" alt="github" />
+            </a>
+          </nav>
+        </div>
+      </section>
+      <section id="about-me" class="about">
+        <p>Somethings about me...</p>
+        <!-- <figure>
           <img class="picture" src="images/me.jpeg" alt="me" />
         </figure> -->
-      <div class="cards">
-        <article>
-          <div class="article-box">
-            <img src="images/icons/education.png" alt="education" />
-            <h2>Education</h2>
-            <p>Instituto Federal de São Paulo - IFSP</p>
-            <p>Technologist in Systems Analysis and Development</p>
-          </div>
-        </article>
-        <article>
-          <div class="article-box">
-            <img src="images/icons/work-experience.png" alt="work experience" />
-            <h2>Work Experience</h2>
-            <p>2019 - 2020 at CPQD as Help Desk</p>
-            <p>2020 - Now at CPQD as FullStack Junior Software Developer</p>
-          </div>
-        </article>
-        <article>
-          <div class="article-box">
-            <img src="images/icons/hobbies.png" alt="hobbies" />
-            <h2>Hobbies</h2>
-            <p>Music, Games, Movies, Animes, Soccer</p>
-            <p>Basketball & Kung-Fu</p>
-          </div>
-        </article>
-      </div>
-    </section>
+        <div class="cards">
+          <article id="education">
+            <div class="article-box">
+              <img src="images/icons/education.png" alt="education" />
+              <h2>Education</h2>
+              <hr />
+              <p>Instituto Federal de São Paulo - IFSP</p>
+              <p>Technologist in Systems Analysis and Development</p>
+            </div>
+          </article>
+          <article id="work-experience">
+            <div class="article-box">
+              <img
+                src="images/icons/work-experience.png"
+                alt="work experience"
+              />
+              <h2>Work Experience</h2>
+              <hr />
+              <p>2019 - 2020 at CPQD as Help Desk</p>
+              <p>2020 - Now at CPQD as FullStack Junior Software Developer</p>
+            </div>
+          </article>
+          <article id="hobbies">
+            <div class="article-box">
+              <img src="images/icons/hobbies.png" alt="hobbies" />
+              <h2>Hobbies</h2>
+              <hr />
+              <p>Music, Games, Movies, Animes, Soccer</p>
+              <p>Basketball & Kung-Fu</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <h1>My Skills</h1>
+      </section>
+    </main>
 
-    <!--      <section id="social-media">
-                <div class="about-me">
-                    <h1>Lets, connect!</h1>
-                </div>
-            </section> -->
-  </main>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

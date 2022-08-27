@@ -8,6 +8,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 
 header nav ul {
@@ -23,6 +24,16 @@ header nav ul li a {
 main {
   width: 70%;
   margin: auto;
+}
+
+main section {
+  position: relative;
+}
+main section::before {
+  content: url(/images/zickzack_white.svg);
+  position: absolute;
+  top: 0;
+  opacity: 0.15;
 }
 
 /* INTRODUCTION STYLE */
@@ -52,7 +63,7 @@ main .introduction .introduction-container .social-medias {
 /* ABOUT STYLE */
 
 main .about {
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,24 +72,24 @@ main .about {
 
 main .about .cards {
   margin-top: 5%;
+  height: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 25px;
+  grid-column-gap: 100px;
   justify-content: center;
 }
 
 main .about .cards article {
   border: 2px solid;
-  min-height: 300px;
-  border-radius: 5px;
-  box-shadow: inset 0 0 0.5em var(--light);
+  height: 100%;
+  border-radius: 10px;
 
   display: flex;
 }
 
 main .about .cards article .article-box {
-  height: 80%;
-  width: 80%;
+  height: 45%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -90,22 +101,16 @@ main .about .cards article .article-box p {
   font-size: 1em;
 }
 
-/* main .about figure {
-  float: left;
+main .about .cards article .article-box hr {
+  width: 15%;
 }
 
-main .about .text {
-  line-height: 35px;
-}
+/* SKILLS STYLE */
 
-main .about .text p {
-  text-align: justify;
+main .skills {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-main .about .picture {
-  height: 350px;
-  width: 350px;
-  border-radius: 5px;
-  margin: 0px 40px 10px 0px;
-  border: 5px solid var(--light);
-} */
