@@ -21,6 +21,21 @@ header nav ul li a {
   padding: 10px 25px;
 }
 
+header nav ul li a {
+  border-bottom: 2px solid var(--dark);
+  transition: 0.2s;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid var(--beige);
+}
+
+header nav ul li .selected {
+  border-bottom: 1px solid var(--orange);
+}
+
+/* MAIN STYLE */
+
 main {
   width: 70%;
   margin: auto;
@@ -118,7 +133,11 @@ main .introduction .introduction-container .introduction-image .less-than-icon {
   transform: rotate(180deg);
 }
 
-main .introduction .introduction-container .introduction-image .introduction-icon {
+main
+  .introduction
+  .introduction-container
+  .introduction-image
+  .introduction-icon {
   animation-name: heartbeat;
   animation-duration: 2s;
   animation-delay: 1s;
@@ -173,7 +192,7 @@ main .about .cards article .article-box hr {
 /* SKILLS STYLE */
 
 main .skills {
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -29,16 +29,42 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#introduction">Home</a></li>
-          <li><a href="#about-me">About-me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#social-media">Let's connect!</a></li>
+          <li>
+            <a
+              id="introduction-href"
+              onclick="scrollSmoothTo('introduction-href', 'introduction')"
+              class="selected"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              id="about-me-href"
+              onclick="scrollSmoothTo('about-me-href', 'about-me')"
+              >About-me</a
+            >
+          </li>
+          <li>
+            <a
+              id="skills-href"
+              onclick="scrollSmoothTo('skills-href', 'skills')"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              id="connect-href"
+              onclick="scrollSmoothTo('connect-href', 'connect')"
+              >Let's connect!</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="introduction" class="introduction">
+        <div id="introduction-section-scroll"></div>
         <div class="introduction-container">
           <div class="introduction-image">
             <img
@@ -76,10 +102,8 @@
         </div>
       </section>
       <section id="about-me" class="about">
+        <div id="about-me-section-scroll"></div>
         <p>Somethings about me...</p>
-        <!-- <figure>
-          <img class="picture" src="images/me.jpeg" alt="me" />
-        </figure> -->
         <div class="cards">
           <article id="education">
             <div class="article-box">
@@ -114,10 +138,11 @@
         </div>
       </section>
       <section id="skills" class="skills">
-        <h1>My Skills</h1>
+        <div id="skills-section-scroll"></div>
+        <h1>Skills</h1>
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
