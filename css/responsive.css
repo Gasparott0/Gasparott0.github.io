@@ -1,0 +1,59 @@
+@media (min-width: 550px) {
+  main section::before {
+    content: url(/images/zickzack_white.svg);
+    position: absolute;
+    top: 0;
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 1500px) {
+  main .about .cards {
+    grid-column-gap: 50px;
+  }
+}
+
+@media (max-width: 1350px) {
+  main .about .cards .cardImage {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 1250px) {
+  main .about .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+  }
+  /* main .about .cards article {
+    min-height: 300px;
+  } */
+  main .about .cards .cardImage {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  p {
+    font-size: 1em;
+  }
+  header {
+    display: none;
+  }
+  main .about {
+    justify-content: flex-start;
+  }
+  main .about .cards {
+    margin-top: 15%;
+    min-height: 800px;
+  }
+}

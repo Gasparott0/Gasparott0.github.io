@@ -44,12 +44,6 @@ main {
 main section {
   position: relative;
 }
-main section::before {
-  content: url(/images/zickzack_white.svg);
-  position: absolute;
-  top: 0;
-  opacity: 0.15;
-}
 
 /* INTRODUCTION STYLE */
 
@@ -157,6 +151,7 @@ main .about {
 main .about .cards {
   margin-top: 5%;
   height: 60%;
+  min-height: 500px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 100px;
@@ -172,7 +167,7 @@ main .about .cards article {
 }
 
 main .about .cards article .article-box {
-  height: 45%;
+  min-height: 45%;
   width: 90%;
   margin: auto;
   display: flex;
