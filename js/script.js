@@ -1,4 +1,3 @@
-ScrollReveal().reveal("#introduction", { delay: 150, reset: true });
 ScrollReveal().reveal("#about-me");
 ScrollReveal().reveal("#skills");
 ScrollReveal().reveal("article", { interval: 300, reset: true });
