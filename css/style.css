@@ -211,32 +211,6 @@ main .about .cards .article-content .card-icon {
   margin-bottom: 0;
 }
 
-/* main .about .cards article {
-  border: 2px solid;
-  height: 100%;
-  border-radius: 10px;
-
-  display: flex;
-}
-
-main .about .cards article .article-box {
-  min-height: 45%;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-main .about .cards article .article-box p {
-  font-size: 1em;
-}
-
-main .about .cards article .article-box hr {
-  width: 15%;
-} */
-
 /* SKILLS STYLE */
 
 main .skills {
