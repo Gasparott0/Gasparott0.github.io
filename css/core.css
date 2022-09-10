@@ -6,6 +6,7 @@
   --dark-transparent: #1b1a17f2;
   --beige: #e6d5b8;
   --orange: #f0a500;
+  --black: #29292e;
 }
 
 * {
@@ -53,4 +54,5 @@ h6 {
 
 p {
   font-size: 1.2em;
+  line-height: 1.5em;
 }

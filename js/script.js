@@ -1,8 +1,7 @@
-ScrollReveal({ reset: true });
-ScrollReveal().reveal("#introduction", { delay: 150 });
+ScrollReveal().reveal("#introduction", { delay: 150, reset: true });
 ScrollReveal().reveal("#about-me");
 ScrollReveal().reveal("#skills");
-ScrollReveal().reveal("article", { delay: 300, interval: 350 });
+ScrollReveal().reveal("article", { interval: 300, reset: true });
 
 const handleNavBar = (anchorId) => {
   document.getElementsByClassName("selected")[0].classList.remove("selected");
