@@ -15,9 +15,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 35px;
   }
+  main .skills {
+    height: 100%;
+    margin-top: 150px;
+  }
+  main .skills .skills-container .technologies ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   h1 {
     font-size: 2.5em;
   }
@@ -25,9 +32,12 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 35px;
   }
+  main .skills .skills-container .technologies ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 1.7em;
   }
@@ -43,5 +53,8 @@
   main .about .cards {
     margin-top: 15%;
     min-height: 800px;
+  }
+  main .skills .skills-container .technologies ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

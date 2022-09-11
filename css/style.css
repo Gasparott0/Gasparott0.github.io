@@ -156,6 +156,10 @@ main .about .cards {
   justify-content: center;
 }
 
+/* main .about .cards article {
+  box-shadow: rgb(0 0 0 / 50%) 0px 4px 16px;
+} */
+
 main .about .cards .article-image {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -191,7 +195,7 @@ main .about .cards .article-content {
   border-color: var(--light) var(--black) var(--black);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-color: #202024;
+  background-color: var(--black);
   text-align: center;
 }
 
@@ -219,4 +223,42 @@ main .skills {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+main .skills p {
+  margin-top: 30px;
+}
+
+main .skills .skills-container {
+  margin-top: 30px;
+}
+
+main .skills .skills-container .technologies {
+  margin-top: 30px;
+}
+
+main .skills .skills-container .technologies ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+}
+
+main .skills .skills-container .technologies ul li {
+  box-shadow: rgb(0 0 0 / 50%) 0px 4px 16px;
+  background-color: var(--black);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+main .skills .skills-container .technologies ul li:hover {
+  box-shadow: rgb(0 0 0 / 50%) 0px 4px 16px;
+  background-color: var(--dark-transparent);
+  border-radius: 5px;
+}
+
+main .skills .skills-container .technologies ul li .technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
 }
