@@ -26,6 +26,10 @@ addEventListener("scroll", (event) => {
     handleNavBar("skills-href");
     return;
   }
+  if (isInViewport(document.getElementById("connect-section-scroll"))) {
+    handleNavBar("connect-href");
+    return;
+  }
 });
 
 function isInViewport(el) {
@@ -37,4 +41,19 @@ function isInViewport(el) {
       (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+
+function sendMail(name, email, subject, message) {
+  const tempParams = {
+    from_name: document.getElementById("connect_name").value,
+    from_email: document.getElementById("connect_email").value,
+    message: document.getElementById("connect_message").value,
+    to_name: "Mateus Gasparotto (EmailJS API)",
+  };
+
+  emailjs
+    .send("service_rpw1cmm", "template_z8o5e3t", tempParams)
+    .then((res) => {
+      console.log("PARAMS: " + tempParams + " HTTP STATUS: ", res.status);
+    });
 }

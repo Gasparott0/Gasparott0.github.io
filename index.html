@@ -35,6 +35,16 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("47f5TGR6QN5FdL5Vv");
+      })();
+    </script>
+    <script src="js/script.js"></script>
 
     <title>Mateus Gasparotto</title>
   </head>
@@ -304,7 +314,26 @@
           </div>
         </div>
       </section>
+      <section id="connect" class="connect">
+        <div id="connect-section-scroll"></div>
+        <h1>Let's connect</h1>
+        <p>
+          To contact me you can send a text message on my
+          <a
+            href="https://www.linkedin.com/in/mateus-gasparotto/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+          or fill the below form that will send a email for me!
+        </p>
+        <div class="connect-form">
+          <input type="text" name="Name" id="connect_name" />
+          <input type="email" name="Email" id="connect_email" />
+          <input type="text" name="Message" id="connect_message" />
+          <button onclick="sendMail()">Enviar</button>
+        </div>
+      </section>
     </main>
-    <script src="js/script.js"></script>
   </body>
 </html>
