@@ -244,7 +244,9 @@
         <p>
           Graduated in Systems Analysis and Development, I currently work as a
           software developer in Brazil working both in the frontend and backend
-          areas using technologies based mainly on java and javascript.
+          areas using technologies based mainly on java and javascript. You can
+          see some projects on my
+          <a href="https://github.com/Gasparott0" target="_blank">Github</a>!
         </p>
         <div class="skills-container">
           <span>Some skills...</span>
@@ -252,61 +254,67 @@
             <ul>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/html.png" alt="" />
+                  <img src="images/technologies/html.png" alt="HTML icon" />
                   <span>HTML</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/css.png" alt="" />
+                  <img src="images/technologies/css.png" alt="CSS icon" />
                   <span>CSS</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/javascript.png" alt="" />
+                  <img
+                    src="images/technologies/javascript.png"
+                    alt="Javascript icon"
+                  />
                   <span>Javascript</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/react.png" alt="" />
+                  <img src="images/technologies/react.png" alt="React icon" />
                   <span>React</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/typescript.png" alt="" />
+                  <img
+                    src="images/technologies/typescript.png"
+                    alt="Typescript icon"
+                  />
                   <span>Typescript</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/java.png" alt="" />
+                  <img src="images/technologies/java.png" alt="Java icon" />
                   <span>Java</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/spring.png" alt="" />
+                  <img src="images/technologies/spring.png" alt="Spring icon" />
                   <span>Spring</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/git.png" alt="" />
+                  <img src="images/technologies/git.png" alt="GIT icon" />
                   <span>GIT</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/sql.png" alt="" />
+                  <img src="images/technologies/sql.png" alt="SQL icon" />
                   <span>SQL</span>
                 </div>
               </li>
               <li>
                 <div class="technology">
-                  <img src="images/technologies/linux.png" alt="" />
+                  <img src="images/technologies/linux.png" alt="Linux icon" />
                   <span>Linux</span>
                 </div>
               </li>
@@ -327,11 +335,30 @@
           </a>
           or fill the below form that will send a email for me!
         </p>
-        <div class="connect-form">
-          <input type="text" name="Name" id="connect_name" />
-          <input type="email" name="Email" id="connect_email" />
-          <input type="text" name="Message" id="connect_message" />
-          <button onclick="sendMail()">Enviar</button>
+        <div class="email-area">
+          <!-- <div class="email-image">
+            <img src="images/email-image.png" alt="Email image" />
+          </div> -->
+          <div class="connect-form">
+            <input
+              type="text"
+              name="Name"
+              id="connect_name"
+              placeholder="Your name"
+            />
+            <input
+              type="email"
+              name="Email"
+              id="connect_email"
+              placeholder="Your email"
+            />
+            <textarea
+              name="Message"
+              id="connect_message"
+              placeholder="Write something..."
+            ></textarea>
+            <button onclick="sendMail()">Send email</button>
+          </div>
         </div>
       </section>
     </main>

@@ -225,6 +225,11 @@ main .skills p {
   margin-top: 30px;
 }
 
+main .skills p a {
+  color: var(--orange);
+  font-weight: bold;
+}
+
 main .skills .skills-container {
   margin-top: 30px;
 }
@@ -269,6 +274,87 @@ main .connect {
   justify-content: center;
 }
 
-main .connect .connect-form {
-  display: grid;
+main .connect p {
+  margin-top: 30px;
+}
+
+main .connect p a {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+main .connect .email-area {
+  max-width: 750px;
+  width: 100%;
+  min-height: 200px;
+  margin-top: 30px;
+  background-color: var(--black);
+  box-shadow: rgb(0 0 0 / 50%) 0px 4px 16px;
+  display: flex;
+  border-radius: 5px;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+main .connect .email-area .connect-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+main .connect .email-area .connect-form input {
+  height: 50px;
+}
+
+main .connect .email-area .connect-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+main .connect .email-area .connect-form input,
+main .connect .email-area .connect-form textarea {
+  background: var(--dark);
+  color: var(--light);
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  padding: 12px;
+  text-align: left;
+}
+
+main .connect .email-area .connect-form input:focus,
+main .connect .email-area .connect-form textarea:focus {
+  border-color: var(--orange);
+}
+
+main .connect .email-area .connect-form input::placeholder,
+main .connect .email-area .connect-form textarea::placeholder {
+  color: var(--light);
+  opacity: 0.3;
+}
+
+main .connect .email-area .connect-form button {
+  background: var(--orange);
+  color: var(--black);
+  font-weight: bold;
+  height: 45px;
+  width: 20%;
+  min-width: 175px;
+  align-self: end;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+}
+
+main .connect .email-area .connect-form #connect_name {
+  background-image: url(../images/icons/name-icon.png);
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 50px;
+  background-position: 10px 10px;
+}
+
+main .connect .email-area .connect-form #connect_email {
+  background-image: url(../images/icons/email-icon.png);
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 50px;
+  background-position: 15px 15px;
 }
