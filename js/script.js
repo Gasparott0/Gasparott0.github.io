@@ -48,7 +48,6 @@ function sendMail(name, email, subject, message) {
       message: document.getElementById("connect_message").value,
       to_name: "Mateus Gasparotto (EmailJS API)",
     };
-
     emailjs
       .send("service_rpw1cmm", "template_z8o5e3t", tempParams)
       .then((res) => {
@@ -56,10 +55,20 @@ function sendMail(name, email, subject, message) {
           putEmailMessage("Something went wrong sending the email...");
         } else {
           putEmailMessage("");
+          showModal();
           console.log("PARAMS: " + tempParams + " HTTP STATUS: ", res.status);
         }
       });
   }
+}
+
+function showModal() {
+  document.getElementById("modal").classList.remove("hide");
+  document.getElementById("modal").classList.add("show");
+  setTimeout(function () {
+    document.getElementById("modal").classList.remove("show");
+    document.getElementById("modal").classList.add("hide");
+  }, 2000);
 }
 
 function validFields() {

@@ -369,3 +369,66 @@ main .connect .email-area .connect-form .submit p {
   font-size: 1em;
   font-weight: bold;
 }
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+main .connect #modal.show {
+  background-color: #0e0a14ef;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms;
+  z-index: 9999;
+}
+
+main .connect #modal.show .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .connect #modal.show .content img {
+  animation-name: jello-horizontal;
+  animation-duration: 1s;
+}
+
+main .connect #modal.show .content p {
+  margin-top: 0;
+}
+
+main .connect #modal.hide {
+  display: none;
+}
