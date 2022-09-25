@@ -292,7 +292,7 @@ main .connect .email-area {
   box-shadow: rgb(0 0 0 / 50%) 0px 4px 16px;
   display: flex;
   border-radius: 5px;
-  padding: 50px;
+  padding: 35px;
   justify-content: space-between;
 }
 

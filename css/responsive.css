@@ -57,4 +57,7 @@
   main .skills .skills-container .technologies ul {
     grid-template-columns: repeat(2, 1fr);
   }
+  main .connect .email-area {
+    padding: 20px;
+  }
 }
