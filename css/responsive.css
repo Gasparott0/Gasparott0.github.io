@@ -35,6 +35,11 @@
   main .skills .skills-container .technologies ul {
     grid-template-columns: repeat(3, 1fr);
   }
+  main .connect .email-area .connect-form .submit {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
 }
 
 @media (max-width: 600px) {

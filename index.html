@@ -336,31 +336,41 @@
           or fill the below form that will send a email for me!
         </p>
         <div class="email-area">
-          <!-- <div class="email-image">
-            <img src="images/email-image.png" alt="Email image" />
-          </div> -->
           <div class="connect-form">
             <input
               type="text"
               name="Name"
               id="connect_name"
+              maxlength="64"
               placeholder="Your name"
             />
             <input
               type="email"
               name="Email"
               id="connect_email"
+              maxlength="64"
               placeholder="Your email"
             />
             <textarea
               name="Message"
               id="connect_message"
+              maxlength="700"
               placeholder="Write something..."
             ></textarea>
-            <button onclick="sendMail()">Send email</button>
+            <div class="submit">
+              <p id="email_message"></p>
+              <button onclick="sendMail()">Send email</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <script>
+      ScrollReveal({ reset: true, delay: 150 });
+      ScrollReveal().reveal("#about-me");
+      ScrollReveal().reveal("#skills");
+      ScrollReveal().reveal("#connect");
+      ScrollReveal().reveal("article", { interval: 250 });
+    </script>
   </body>
 </html>

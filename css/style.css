@@ -340,7 +340,6 @@ main .connect .email-area .connect-form button {
   height: 45px;
   width: 20%;
   min-width: 175px;
-  align-self: end;
   border-radius: 4px;
   border: 1px solid var(--gray);
 }
@@ -357,4 +356,16 @@ main .connect .email-area .connect-form #connect_email {
   background-repeat: no-repeat;
   padding: 12px 0px 12px 50px;
   background-position: 15px 15px;
+}
+
+main .connect .email-area .connect-form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .connect .email-area .connect-form .submit p {
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: bold;
 }

@@ -1,17 +1,13 @@
-ScrollReveal().reveal("#about-me");
-ScrollReveal().reveal("#skills");
-ScrollReveal().reveal("article", { interval: 300, reset: true });
-
-const handleNavBar = (anchorId) => {
+function handleNavBar(anchorId) {
   document.getElementsByClassName("selected")[0].classList.remove("selected");
   document.getElementById(anchorId).classList.add("selected");
-};
+}
 
-const scrollSmoothTo = (anchorId, elementId) => {
+function scrollSmoothTo(anchorId, elementId) {
   handleNavBar(anchorId);
   const element = document.getElementById(elementId);
   element.scrollIntoView({ block: "start", behavior: "smooth" });
-};
+}
 
 addEventListener("scroll", (event) => {
   if (isInViewport(document.getElementById("introduction-section-scroll"))) {
@@ -44,16 +40,64 @@ function isInViewport(el) {
 }
 
 function sendMail(name, email, subject, message) {
-  const tempParams = {
-    from_name: document.getElementById("connect_name").value,
-    from_email: document.getElementById("connect_email").value,
-    message: document.getElementById("connect_message").value,
-    to_name: "Mateus Gasparotto (EmailJS API)",
-  };
+  if (validFields()) {
+    putEmailMessage("Sending...");
+    const tempParams = {
+      from_name: document.getElementById("connect_name").value,
+      from_email: document.getElementById("connect_email").value,
+      message: document.getElementById("connect_message").value,
+      to_name: "Mateus Gasparotto (EmailJS API)",
+    };
 
-  emailjs
-    .send("service_rpw1cmm", "template_z8o5e3t", tempParams)
-    .then((res) => {
-      console.log("PARAMS: " + tempParams + " HTTP STATUS: ", res.status);
-    });
+    emailjs
+      .send("service_rpw1cmm", "template_z8o5e3t", tempParams)
+      .then((res) => {
+        if (res.status != 200) {
+          putEmailMessage("Something went wrong sending the email...");
+        } else {
+          putEmailMessage("");
+          console.log("PARAMS: " + tempParams + " HTTP STATUS: ", res.status);
+        }
+      });
+  }
+}
+
+function validFields() {
+  const from_name = document.getElementById("connect_name").value;
+  const from_email = document.getElementById("connect_email").value;
+  const message = document.getElementById("connect_message").value;
+  return (
+    validateName(from_name) &&
+    validateEmail(from_email) &&
+    validateMessage(message)
+  );
+}
+
+function validateName(name) {
+  if (name.trim().length > 0) {
+    return true;
+  }
+  putEmailMessage("The name is not valid!");
+  document.getElementById("connect_name").focus();
+}
+
+function validateEmail(email) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return true;
+  }
+  putEmailMessage("The email is not valid!");
+  document.getElementById("connect_email").focus();
+}
+
+function validateMessage(message) {
+  if (message.trim().length > 0) {
+    return true;
+  }
+  putEmailMessage("The message is not valid!");
+  document.getElementById("connect_message").focus();
+}
+
+function putEmailMessage(message) {
+  const from_name = (document.getElementById("email_message").innerHTML =
+    message);
 }
