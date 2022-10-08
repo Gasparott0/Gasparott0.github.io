@@ -110,3 +110,42 @@ function putEmailMessage(message) {
   const from_name = (document.getElementById("email_message").innerHTML =
     message);
 }
+
+function printSubtitle(text) {
+  const timePerLetter = 100;
+  for (var i = 0; i < text.length; i++) {
+    var CHAR = text[i];
+    setTimeout(appendLetter, timePerLetter * i, CHAR);
+  }
+}
+
+function appendLetter(character) {
+  document.getElementById("subtitle").append(character);
+}
+
+function removeSubtitle() {
+  const subtitle = document.getElementById("subtitle").innerText;
+  const timePerLetter = 50;
+  for (var i = 0; i < subtitle.length; i++) {
+    setTimeout(removeLetter, timePerLetter * i);
+  }
+}
+
+function removeLetter() {
+  document.getElementById("subtitle").innerHTML = document
+    .getElementById("subtitle")
+    .innerHTML.slice(0, -1);
+}
+
+async function writeSubtitle() {
+  while (true) {
+    printSubtitle("Hi guys 👋 I'm Mateus Gasparotto.");
+    await new Promise((r) => setTimeout(r, 10000));
+    removeSubtitle();
+    await new Promise((r) => setTimeout(r, 2000));
+    printSubtitle("console.log('Welcome to my Portfolio')");
+    await new Promise((r) => setTimeout(r, 10000));
+    removeSubtitle();
+    await new Promise((r) => setTimeout(r, 2000));
+  }
+}
