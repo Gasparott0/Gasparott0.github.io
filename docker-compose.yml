@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gasparotto-portfolio
+    ports:
+      - "80:80"
