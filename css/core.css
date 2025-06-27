@@ -1,9 +1,9 @@
 :root {
-  --light: #eeeeee;
+  --light: #e3e3e3;
   --blue: #00adb5;
   --gray: #393e46;
-  --dark: #1b1a17;
-  --dark-transparent: #1b1a17f2;
+  --dark: #131314;
+  --dark-transparent: #131314f2;
   --beige: #e6d5b8;
   --orange: #f0a500;
   --black: #202024;
@@ -16,7 +16,7 @@
 
 html,
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   color: var(--light);
   background: var(--dark);
   height: 100%;
@@ -52,7 +52,7 @@ h6,
 p,
 input,
 textarea {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Mona Sans", sans-serif;
 }
 
 p {

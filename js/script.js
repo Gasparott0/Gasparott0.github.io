@@ -139,7 +139,7 @@ function removeLetter() {
 
 async function writeSubtitle() {
   while (true) {
-    printSubtitle("Hi guys 👋 I'm Mateus Gasparotto.");
+    printSubtitle("Hi guys. I'm Mateus Gasparotto.");
     await new Promise((r) => setTimeout(r, 10000));
     removeSubtitle();
     await new Promise((r) => setTimeout(r, 2000));
