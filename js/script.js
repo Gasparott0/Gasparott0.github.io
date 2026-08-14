@@ -49,7 +49,7 @@ function sendMail(name, email, subject, message) {
       to_name: "Mateus Gasparotto (EmailJS API)",
     };
     emailjs
-      .send("service_rpw1cmm", "template_z8o5e3t", tempParams)
+      .send("service_krg8don", "template_z8o5e3t", tempParams)
       .then((res) => {
         if (res.status != 200) {
           putEmailMessage("Something went wrong sending the email...");
