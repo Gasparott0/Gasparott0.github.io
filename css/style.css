@@ -370,18 +370,46 @@ main .connect .email-area .connect-form button {
   border: 1px solid var(--gray);
 }
 
-main .connect .email-area .connect-form #connect_name {
-  background-image: url(../images/icons/name-icon.png);
-  background-repeat: no-repeat;
+main .connect .email-area .connect-form #connect_name,
+main .connect .email-area .connect-form #connect_email {
   padding: 12px 0px 12px 50px;
-  background-position: 10px 10px;
 }
 
-main .connect .email-area .connect-form #connect_email {
-  background-image: url(../images/icons/email-icon.png);
+main .connect .email-area .connect-form .field {
+  position: relative;
+}
+
+main .connect .email-area .connect-form .field > input {
+  width: 100%;
+}
+
+main .connect .email-area .connect-form .field .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
-  padding: 12px 0px 12px 50px;
-  background-position: 15px 15px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+main .connect .email-area .connect-form .field .icon.icon-name {
+  background-image: url(../images/icons/name-icon.png);
+}
+
+main .connect .email-area .connect-form .field .icon.icon-email {
+  background-image: url(../images/icons/email-icon.png);
+  background-size: 20px 20px;
+  background-position: 0 50%;
+}
+
+main .connect .email-area .connect-form input:-webkit-autofill,
+main .connect .email-area .connect-form textarea:-webkit-autofill {
+  -webkit-text-fill-color: var(--light);
+  -webkit-box-shadow: 0 0 0 1000px var(--dark) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 main .connect .email-area .connect-form .submit {
